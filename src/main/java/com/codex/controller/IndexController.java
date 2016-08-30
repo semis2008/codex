@@ -1,4 +1,4 @@
-package com.cenyol.example.controller;
+package com.codex.controller;
 
 
 import org.springframework.stereotype.Controller;
