@@ -28,4 +28,10 @@ public class IndexController {
 
     }
 
+    @RequestMapping(value = "/regist")
+    private ModelAndView regist() throws Exception {
+        return new ModelAndView("regist");
+
+    }
+
 }

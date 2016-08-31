@@ -14,18 +14,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <title>Our Love</title>
-  <!-- 新 Bootstrap 核心 CSS 文件 -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.css">
 
-  <link rel="stylesheet" type="text/css" href="../css/ourlove/isotope.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../css/ourlove/isotope.css" media="screen" />
   <link rel="stylesheet" href="../../js/ourlove/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="../../css/ourlove/bootstrap.css">
   <link rel="stylesheet" href="../../css/ourlove/bootstrap-theme.css">
   <link href="../../css/ourlove/responsive-slider.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/ourlove/animate.css">
   <link rel="stylesheet" href="../../css/ourlove/style.css">
-
-  <link rel="stylesheet" href="../../css/ourlove/font-awesome.min.css">
   <!-- skin -->
   <link rel="stylesheet" href="../../css/ourlove/default.css">
 

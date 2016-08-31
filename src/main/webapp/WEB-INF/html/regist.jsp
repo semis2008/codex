@@ -43,7 +43,7 @@
       <div class="inside-block">
         <img src="../../img/codex/logo-big.png" alt class="logo">
         <h1><strong>Welcome</strong> CODE X</h1>
-        <h5>sign in to Code X</h5>
+        <h5>Join Code X</h5>
 
         <form id="form-signin" class="form-signin">
           <section>
@@ -55,18 +55,26 @@
               <input type="password" class="form-control" name="password" placeholder="Password">
               <div class="input-group-addon"><i class="fa fa-key"></i></div>
             </div>
-          </section>
-          <section class="controls">
-            <div class="checkbox check-transparent">
-              <input type="checkbox" value="1" id="remember" checked>
-              <label for="remember">Remember me</label>
+            <div class="input-group">
+              <input type="password" class="form-control" name="passwordConf" placeholder="Confirm Password">
+              <div class="input-group-addon"><i class="fa fa-key"></i></div>
             </div>
-            <%--<a href="#">Forget password?</a>--%>
+            <div class="input-group">
+              <input type="text" class="form-control" name="phone" placeholder="Phone">
+              <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+            </div>
           </section>
+          <%--<section class="controls">--%>
+            <%--<div class="checkbox check-transparent">--%>
+              <%--<input type="checkbox" value="1" id="remember" checked>--%>
+              <%--<label for="remember">Remember me</label>--%>
+            <%--</div>--%>
+            <%--&lt;%&ndash;<a href="#">Forget password?</a>&ndash;%&gt;--%>
+          <%--</section>--%>
           <section class="log-in">
-            <button class="btn btn-greensea">Log In</button>
+            <button class="btn btn-greensea">Create an account</button>
             <span>or</span>
-            <button class="btn btn-slategray">Create an account</button>
+            <button class="btn btn-slategray">Log In</button>
           </section>
         </form>
       </div>
