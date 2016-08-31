@@ -1,4 +1,4 @@
-package com.codex.controller;
+package com.codex.controller.web;
 
 
 import org.springframework.stereotype.Controller;
