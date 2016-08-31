@@ -19,9 +19,9 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- CSS -->
   <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
-  <link rel="stylesheet" href="../css/login/reset.css">
-  <link rel="stylesheet" href="../css/login/supersized.css">
-  <link rel="stylesheet" href="../css/login/style.css">
+  <link rel="stylesheet" href="../../css/login/reset.css">
+  <link rel="stylesheet" href="../../css/login/supersized.css">
+  <link rel="stylesheet" href="../../css/login/style.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,10 +48,10 @@
 
 
 <!-- Javascript -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/login/supersized.3.2.7.min.js"></script>
-<script src="../js/login/supersized-init.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/login/supersized.3.2.7.min.js"></script>
+<script src="../../js/login/supersized-init.js"></script>
 <%--<script src="../js/scripts.js"></script>--%>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>

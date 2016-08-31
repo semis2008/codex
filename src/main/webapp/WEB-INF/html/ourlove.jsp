@@ -18,16 +18,16 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <link rel="stylesheet" type="text/css" href="../css/ourlove/isotope.css" media="screen" />
-  <link rel="stylesheet" href="../js/ourlove/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="../css/ourlove/bootstrap.css">
-  <link rel="stylesheet" href="../css/ourlove/bootstrap-theme.css">
-  <link href="../css/ourlove/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/ourlove/animate.css">
-  <link rel="stylesheet" href="../css/ourlove/style.css">
+  <link rel="stylesheet" href="../../js/ourlove/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../../css/ourlove/bootstrap.css">
+  <link rel="stylesheet" href="../../css/ourlove/bootstrap-theme.css">
+  <link href="../../css/ourlove/responsive-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/ourlove/animate.css">
+  <link rel="stylesheet" href="../../css/ourlove/style.css">
 
-  <link rel="stylesheet" href="../css/ourlove/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/ourlove/font-awesome.min.css">
   <!-- skin -->
-  <link rel="stylesheet" href="../css/ourlove/default.css">
+  <link rel="stylesheet" href="../../css/ourlove/default.css">
 
 
 
@@ -82,7 +82,7 @@
           <ul>
             <li>
               <div class="slide-body" data-group="slide">
-                <img src="../img/8.jpg" alt="">
+                <img src="../../img/8.jpg" alt="">
                 <div class="caption header" data-animate="slideAppearUpToDown" data-delay="500" data-length="300">
                   <h2>13年10月8号相遇</h2>
                   <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="1200" data-length="300"><h4><span>我推门而入，而你如天使般</span></h4></div>
@@ -92,7 +92,7 @@
             </li>
             <li>
               <div class="slide-body" data-group="slide">
-                <img src="../img/2.jpg" alt="">
+                <img src="../../img/2.jpg" alt="">
                 <div class="caption header" data-animate="slideAppearDownToUp" data-delay="500" data-length="300">
                   <h2>12月8号相恋</h2>
                   <div class="caption-sub" data-animate="slideAppearUpToDown" data-delay="800" data-length="300"><h4><span>你是我的小懒虫 </span></h4></div>
@@ -102,7 +102,7 @@
             </li>
             <li>
               <div class="slide-body" data-group="slide">
-                <img src="../img/6.jpg" alt="">
+                <img src="../../img/6.jpg" alt="">
                 <div class="caption header" data-animate="slideAppearUpToDown" data-delay="500" data-length="300">
                   <h2>16年10月3号我们结婚</h2>
                   <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"><h4>从此开始新的爱情历程</h4></div>
@@ -148,9 +148,9 @@
                   <ul>
 
                     <div class="slide-body" data-group="slide">
-                      <li><img alt="" class="img-responsive" src="../img/9.jpg" width="100%" height="350"/></li>
-                      <li><img alt="" class="img-responsive" src="../img/10.jpg" width="100%" height="350"/></li>
-                      <li><img alt="" class="img-responsive" src="../img/11.jpg" width="100%" height="350"/></li>
+                      <li><img alt="" class="img-responsive" src="../../img/9.jpg" width="100%" height="350"/></li>
+                      <li><img alt="" class="img-responsive" src="../../img/10.jpg" width="100%" height="350"/></li>
+                      <li><img alt="" class="img-responsive" src="../../img/11.jpg" width="100%" height="350"/></li>
 
                     </div>
                   </ul>
@@ -360,7 +360,7 @@
           <div class="wow bounceIn" data-animation-delay="4.8s">
             <div class="team-member">
               <div class="profile-picture">
-                <figure><img src="../img/members3.jpg" alt=""></figure>
+                <figure><img src="../../img/members3.jpg" alt=""></figure>
                 <div class="profile-overlay"></div>
                 <div class="profile-social">
                   <div class="icons-wrapper">
@@ -387,7 +387,7 @@
           <div class="wow bounceIn">
             <div class="team-member">
               <div class="profile-picture">
-                <figure><img src="../img/members1.jpg" alt=""></figure>
+                <figure><img src="../../img/members1.jpg" alt=""></figure>
                 <div class="profile-overlay"></div>
                 <div class="profile-social">
                   <div class="icons-wrapper">
@@ -413,7 +413,7 @@
           <div class="wow bounceIn">
             <div class="team-member">
               <div class="profile-picture">
-                <figure><img src="../img/members2.jpg" alt=""></figure>
+                <figure><img src="../../img/members2.jpg" alt=""></figure>
                 <div class="profile-overlay"></div>
                 <div class="profile-social">
                   <div class="icons-wrapper">
@@ -602,12 +602,12 @@
               <article class="col-md-4 isotopeItem webdesign">
                 <div class="portfolio-item">
                   <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
-                    <img src="../img/portfolio/1.jpg" alt="welcome" />
+                    <img src="../../img/portfolio/1.jpg" alt="welcome" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 1</a></h5>
-                      <a href="../img/portfolio/1.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/1.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -616,12 +616,12 @@
               <article class="col-md-4 isotopeItem photography">
                 <div class="portfolio-item">
                   <div class="wow bounceIn">
-                    <img src="../img/portfolio/2.jpg" alt="" />
+                    <img src="../../img/portfolio/2.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 2</a></h5>
-                      <a href="../img/portfolio/2.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/2.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -631,12 +631,12 @@
               <article class="col-md-4 isotopeItem photography">
                 <div class="portfolio-item">
                   <div class="wow rotateInDownRight">
-                    <img src="../img/portfolio/3.jpg" alt="" />
+                    <img src="../../img/portfolio/3.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 3</a></h5>
-                      <a href="../img/portfolio/3.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/3.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -645,12 +645,12 @@
               <article class="col-md-4 isotopeItem print">
                 <div class="portfolio-item">
                   <div class="wow rotateInUpLeft">
-                    <img src="../img/portfolio/4.jpg" alt="" />
+                    <img src="../../img/portfolio/4.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 4</a></h5>
-                      <a href="../img/portfolio/4.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/4.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -659,12 +659,12 @@
               <article class="col-md-4 isotopeItem photography">
                 <div class="portfolio-item">
                   <div class="wow bounceIn">
-                    <img src="../img/portfolio/5.jpg" alt="" />
+                    <img src="../../img/portfolio/5.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 5</a></h5>
-                      <a href="../img/portfolio/5.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/5.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -673,12 +673,12 @@
               <article class="col-md-4 isotopeItem webdesign">
                 <div class="portfolio-item">
                   <div class="wow rotateInDownRight">
-                    <img src="../img/portfolio/6.jpg" alt="" />
+                    <img src="../../img/portfolio/6.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 6</a></h5>
-                      <a href="../img/portfolio/6.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/6.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -687,12 +687,12 @@
               <article class="col-md-4 isotopeItem print">
                 <div class="portfolio-item">
                   <div class="wow rotateInUpLeft">
-                    <img src="../img/portfolio/7.jpg" alt="" />
+                    <img src="../../img/portfolio/7.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 7</a></h5>
-                      <a href="../img/portfolio/7.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/7.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -701,12 +701,12 @@
               <article class="col-md-4 isotopeItem photography">
                 <div class="portfolio-item">
                   <div class="wow bounceIn">
-                    <img src="../img/portfolio/8.jpg" alt="" />
+                    <img src="../../img/portfolio/8.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 8</a></h5>
-                      <a href="../img/portfolio/8.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/8.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -715,12 +715,12 @@
               <article class="col-md-4 isotopeItem print">
                 <div class="portfolio-item">
                   <div class="wow rotateInDownRight">
-                    <img src="../img/portfolio/9.jpg" alt="" />
+                    <img src="../../img/portfolio/9.jpg" alt="" />
                   </div>
                   <div class="portfolio-desc align-center">
                     <div class="folio-info">
                       <h5><a href="#">Project name 9</a></h5>
-                      <a href="../img/portfolio/9.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                      <a href="../../img/portfolio/9.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
                     </div>
                   </div>
                 </div>
@@ -825,31 +825,31 @@
 
 
 <!-- Javascript -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 
 
 
-<script src="../js/ourlove/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="../../js/ourlove/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-<script src="../js/ourlove/jquery.easing.1.3.js"></script>
+<script src="../../js/ourlove/jquery.easing.1.3.js"></script>
 
 
-<script src="../js/ourlove/jquery.isotope.min.js"></script>
-<script src="../js/ourlove/jquery.nicescroll.min.js"></script>
-<script src="../js/ourlove/fancybox/jquery.fancybox.pack.js"></script>
-<script src="../js/ourlove/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
-<script src="../js/ourlove/skrollr.min.js"></script>
-<script src="../js/ourlove/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script src="../js/ourlove/jquery.localscroll-1.2.7-min.js"></script>
-<script src="../js/ourlove/stellar.js"></script>
-<script src="../js/ourlove/responsive-slider.js"></script>
-<script src="../js/ourlove/jquery.appear.js"></script>
-<script src="../js/ourlove/validate.js"></script>
-<script src="../js/ourlove/grid.js"></script>
-<script src="../js/ourlove/main.js"></script>
+<script src="../../js/ourlove/jquery.isotope.min.js"></script>
+<script src="../../js/ourlove/jquery.nicescroll.min.js"></script>
+<script src="../../js/ourlove/fancybox/jquery.fancybox.pack.js"></script>
+<script src="../../js/ourlove/jquery.parallax-1.1.3.js" type="text/javascript" ></script>
+<script src="../../js/ourlove/skrollr.min.js"></script>
+<script src="../../js/ourlove/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script src="../../js/ourlove/jquery.localscroll-1.2.7-min.js"></script>
+<script src="../../js/ourlove/stellar.js"></script>
+<script src="../../js/ourlove/responsive-slider.js"></script>
+<script src="../../js/ourlove/jquery.appear.js"></script>
+<script src="../../js/ourlove/validate.js"></script>
+<script src="../../js/ourlove/grid.js"></script>
+<script src="../../js/ourlove/main.js"></script>
 
-<script src="../js/ourlove/wow.min.js"></script>
+<script src="../../js/ourlove/wow.min.js"></script>
 <script>
   wow = new WOW(
           {
