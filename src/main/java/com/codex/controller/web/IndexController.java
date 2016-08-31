@@ -34,4 +34,10 @@ public class IndexController {
 
     }
 
+    @RequestMapping(value = "/comming")
+    private ModelAndView comming() throws Exception {
+        return new ModelAndView("comming");
+
+    }
+
 }

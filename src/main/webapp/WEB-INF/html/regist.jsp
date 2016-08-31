@@ -72,9 +72,9 @@
             <%--&lt;%&ndash;<a href="#">Forget password?</a>&ndash;%&gt;--%>
           <%--</section>--%>
           <section class="log-in">
-            <button class="btn btn-greensea">Create an account</button>
+            <a href="/comming" class="btn btn-greensea">Create an account</a>
             <span>or</span>
-            <button class="btn btn-slategray">Log In</button>
+            <a class="btn btn-slategray" href="/login">Log In</a>
           </section>
         </form>
       </div>
@@ -88,5 +88,6 @@
 <!-- Javascript -->
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/avalon.js"></script>
 </body>
 </html>

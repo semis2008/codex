@@ -31,57 +31,48 @@
 </head>
 <body class="bg-1">
 
-
 <!-- Wrap all page content here -->
 <div id="wrap">
+
   <!-- Make page fluid -->
   <div class="row">
+
     <!-- Page content -->
-    <div id="content" class="col-md-12 full-page login">
+    <div id="content" class="col-md-12 full-page error">
+
+      <div class="search">
+        <input type="text" class="form-control" placeholder="Search...">
+      </div><!-- /input-group -->
 
 
       <div class="inside-block">
-        <img src="../../img/codex/logo-big.png" alt class="logo">
-        <h1><strong>Welcome</strong> CODE X</h1>
-        <h5>sign in to Code X</h5>
 
-        <form id="form-signin" class="form-signin">
-          <section>
-            <div class="input-group">
-              <input type="text" class="form-control" name="username" placeholder="Username">
-              <div class="input-group-addon"><i class="fa fa-user"></i></div>
-            </div>
-            <div class="input-group">
-              <input type="password" class="form-control" name="password" placeholder="Password">
-              <div class="input-group-addon"><i class="fa fa-key"></i></div>
-            </div>
-          </section>
-          <section class="controls">
-            <div class="checkbox check-transparent">
-              <input type="checkbox" value="1" id="remember" checked>
-              <label for="remember">Remember me</label>
-            </div>
-            <%--<a href="#">Forget password?</a>--%>
-          </section>
-          <section class="log-in">
-            <a class="btn btn-greensea" href="/comming">Log In</a>
-            <span>or</span>
-            <a href="/regist" class="btn btn-slategray">Create an account</a>
-          </section>
-        </form>
+        <img src="../../img/codex/logo-big.png" alt class="logo">
+
+        <h1 class="error">Cooming <strong>soon!</strong></h1>
+        <p class="lead"><span class="overline">Code X</span> 's not avaliable now</p>
+        <p>the page you are looking for cannot be found</p>
+
+        <div class="controls">
+          <a class="btn btn-cyan" href="/comming"><i class="fa fa-refresh"></i> Try Again</a>
+          <a class="btn btn-greensea" href="/login"><i class="fa fa-sign-in"></i> Return to login</a>
+          <a class="btn btn-red" href="/#"><i class="fa fa-envelope"></i> Contact Support</a>
+        </div>
+
       </div>
 
 
     </div>
     <!-- /Page content -->
+
   </div>
+
 </div>
+<!-- Wrap all page content end -->
 
 <!-- Javascript -->
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/avalon.js"></script>
-
-
 </body>
 </html>
