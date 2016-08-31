@@ -39,12 +39,6 @@
 
     <!-- Page content -->
     <div id="content" class="col-md-12 full-page error">
-
-      <div class="search">
-        <input type="text" class="form-control" placeholder="Search...">
-      </div><!-- /input-group -->
-
-
       <div class="inside-block">
 
         <img src="../../img/codex/logo-big.png" alt class="logo">
