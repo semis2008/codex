@@ -56,7 +56,7 @@
         <div class="controls">
           <a class="btn btn-cyan" href="/comming"><i class="fa fa-refresh"></i> Try Again</a>
           <a class="btn btn-greensea" href="/login"><i class="fa fa-sign-in"></i> Return to login</a>
-          <a class="btn btn-red" href="/#"><i class="fa fa-envelope"></i> Contact Support</a>
+          <a class="btn btn-red" href="/login"><i class="fa fa-envelope"></i> Contact Support</a>
         </div>
 
       </div>
