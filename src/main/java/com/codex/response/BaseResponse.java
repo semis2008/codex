@@ -2,7 +2,7 @@ package com.codex.response;
 
 import java.io.Serializable;
 
-import com.alibaba.fastjson.JSON;
+
 
 public class BaseResponse implements Serializable{
 	/** 
@@ -42,11 +42,6 @@ public class BaseResponse implements Serializable{
 
 	public void setData(Object data) {
 		this.data = data;
-	}
-
-	@Override
-	public String toString() {
-		return JSON.toJSONString(this);
 	}
 
 	public long getTicks() {

@@ -24,12 +24,12 @@ import javax.crypto.Cipher;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.*;
+
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 /**
  * RSA算法加密/解密工具类。
@@ -39,7 +39,7 @@ import org.slf4j.LoggerFactory;
  */
 public abstract class RSAUtils {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RSAUtils_zhanping.class);
+    private static final Logger LOGGER = Logger.getLogger(RSAUtils_zhanping.class);
 
     /** 算法名称 */
     private static final String ALGORITHOM = "RSA";
@@ -204,8 +204,8 @@ public abstract class RSAUtils {
     /**
      * 根据给定的16进制系数和专用指数字符串构造一个RSA专用的私钥对象。
      *
-     * @param modulus 系数。
-     * @param privateExponent 专用指数。
+     * @param hexModulus 系数。
+     * @param hexPrivateExponent 专用指数。
      * @return RSA专用私钥对象。
      */
     public static RSAPrivateKey getRSAPrivateKey(String hexModulus, String hexPrivateExponent) {
@@ -232,8 +232,8 @@ public abstract class RSAUtils {
     /**
      * 根据给定的16进制系数和专用指数字符串构造一个RSA专用的公钥对象。
      *
-     * @param modulus 系数。
-     * @param publicExponent 专用指数。
+     * @param hexModulus 系数。
+     * @param hexPublicExponent 专用指数。
      * @return RSA专用公钥对象。
      */
     public static RSAPublicKey getRSAPublidKey(String hexModulus, String hexPublicExponent) {

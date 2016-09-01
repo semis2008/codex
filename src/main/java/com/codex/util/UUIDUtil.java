@@ -1,8 +1,10 @@
 package com.codex.util;
 
+import org.apache.commons.lang.RandomStringUtils;
+
 import java.util.UUID;
 
-import org.apache.commons.lang.RandomStringUtils;
+
 
 /**
  * UUID生成工具类

@@ -2,10 +2,8 @@ package com.codex.web;
 
 
 import org.springframework.stereotype.Controller;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 
 @Controller
 public class IndexController {
@@ -39,5 +37,9 @@ public class IndexController {
         return new ModelAndView("comming");
 
     }
+    @RequestMapping(value = "/alipay")
+    private ModelAndView alipay() throws Exception {
+        return new ModelAndView("alipay/index");
 
+    }
 }

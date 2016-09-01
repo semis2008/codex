@@ -8,8 +8,11 @@
 
     <import resource="classpath:conf/codex-beans-context.xml"/>
     <!-- 注解 -->
-    <context:component-scan base-package="com.codex"/>
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven />
+    <context:annotation-config/>
+    <context:component-scan base-package="com.codex">
+
+    </context:component-scan>
     <!-- 静态资源(js、image等)的访问 -->
     <mvc:default-servlet-handler/>
     <!-- 视图 -->
