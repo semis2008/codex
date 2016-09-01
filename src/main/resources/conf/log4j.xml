@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
 <log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
 
 	<!-- 控制台输出 -->
@@ -11,15 +11,12 @@
 			<param name="LevelMin" value="DEBUG" />
 		</filter>
 	</appender>
-
 	<logger name="java.sql">
 		<level value="debug" />
 	</logger>
-
 	<logger name="org.apache.ibatis">
 		<level value="debug" />
 	</logger>
-
 	<!-- 系统启动日志输出文件 -->
 	<appender name="fileAppender"
 		class="org.apache.log4j.RollingFileAppender">
