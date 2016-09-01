@@ -15,19 +15,10 @@ public class BaseResponse implements Serializable{
 	private int retcode = 0;
 	private String retdesc;
 	private Object data;
-	private Boolean isReward = true;
 	/**
 	 * 方法执行时间
 	 */
 	private long ticks;
-
-	public Boolean getIsReward() {
-		return isReward;
-	}
-
-	public void setIsReward(Boolean isReward) {
-		this.isReward = isReward;
-	}
 
 	public int getRetcode() {
 		return retcode;
