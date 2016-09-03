@@ -6,7 +6,7 @@
     <resultMap id="User" type="User">
         <result column="userName" property="userName" jdbcType="VARCHAR"/>
         <result column="password" property="passWord" jdbcType="VARCHAR"/>
-        <result column="userKey" property="nickName" jdbcType="VARCHAR"/>
+        <result column="userKey" property="userKey" jdbcType="VARCHAR"/>
         <result column="phone" property="phone" jdbcType="VARCHAR"/>
         <result column="status" property="status" jdbcType="INTEGER"/>
         <result column="createTime" property="createTime" jdbcType="VARCHAR"/>

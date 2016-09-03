@@ -32,4 +32,8 @@ public class UserUtil {
     public static String getPassEncrypt(String pass) throws Exception{
         return SHAUtil.SHA256Encrypt(SHAUtil.shaEncode(pass+"123qwe")).substring(0,16);
     }
+
+    public static void main(String args[]) throws Exception{
+        System.out.print(UserUtil.getPassEncrypt("zaq1.2wsx"));
+    }
 }
