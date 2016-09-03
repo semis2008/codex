@@ -9,7 +9,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <spring.version>4.2.2.RELEASE</spring.version>
+        <spring.version>3.2.8.RELEASE</spring.version>
         <spring-data.version>1.2.0.RELEASE</spring-data.version>
     </properties>
 
@@ -98,6 +98,29 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-lgpl</artifactId>
+            <version>1.9.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-lgpl</artifactId>
+            <version>1.9.6</version>
+        </dependency>
+
+
         <!-- common包 -->
         <dependency>
             <groupId>org.apache.commons</groupId>

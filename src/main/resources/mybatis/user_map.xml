@@ -4,13 +4,12 @@
 
 <mapper namespace="com.codex.dao.UserMapper">
     <resultMap id="User" type="User">
-        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
-        <result column="pass_word" property="passWord" jdbcType="VARCHAR"/>
-        <result column="nick_name" property="nickName" jdbcType="VARCHAR"/>
-        <result column="email" property="email" jdbcType="VARCHAR"/>
-        <result column="role" property="role" jdbcType="INTEGER"/>
-        <result column="create_user" property="createUser" jdbcType="VARCHAR"/>
-        <result column="create_time" property="createTime" jdbcType="VARCHAR"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR"/>
+        <result column="password" property="passWord" jdbcType="VARCHAR"/>
+        <result column="userKey" property="nickName" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
     </resultMap>
 
     <insert id="insert" parameterType="User">
@@ -25,16 +24,12 @@
 
     <select id="queryUserByName" resultMap="User">
 		select
-		user_name,pass_word,nick_name,email,role,create_user,create_time from
-		security_user where user_name = #{0}
+		userName,passWord,userKey,phone,status,createTime from
+		user where userName = #{0}
 	</select>
     <delete id="deleteUser">
 		delete from security_user where user_name = #{0}
 	</delete>
-
-    <delete id="deleteUserRole">
-        delete from board_user_role where user_name = #{0}
-    </delete>
 
     <select id="selectAllUsers" resultMap="User">
 		select

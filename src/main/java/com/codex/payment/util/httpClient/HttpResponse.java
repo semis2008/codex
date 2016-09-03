@@ -2,7 +2,6 @@ package com.codex.payment.util.httpClient;
 
 import com.codex.payment.config.AlipayConfig;
 import org.apache.commons.httpclient.Header;
-
 import java.io.UnsupportedEncodingException;
 
 /* *

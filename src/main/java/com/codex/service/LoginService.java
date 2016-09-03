@@ -9,5 +9,5 @@ import org.springframework.stereotype.Service;
  */
 public interface LoginService {
 
-    BaseResponse loginPost(LoginPostReq req);
+    BaseResponse loginPost(LoginPostReq req) throws Exception;
 }

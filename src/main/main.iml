@@ -16,6 +16,7 @@
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/webapp/WEB-INF/mvc-dispatcher-servlet.xml</file>
           <file>file://$MODULE_DIR$/resources/conf/codex-beans-context.xml</file>
+          <file>file://$MODULE_DIR$/resources/conf/mvc-dispatcher-servlet.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -38,5 +39,8 @@
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk16:1.46" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
   </component>
 </module>

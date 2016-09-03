@@ -10,6 +10,6 @@ public class Constants {
     public static final Integer CODE_EXCEPTION = -1;
     public static final Integer CODE_FAIL = 2;
 
-
-
+    public static final String LOGIN_USER = "login_user";
+    public static final String CODEX_PREFIX = "http://localhost:8080";
 }

@@ -42,4 +42,9 @@ public class IndexController {
         return new ModelAndView("alipay/index");
 
     }
+    @RequestMapping(value = "/index")
+    private ModelAndView index() throws Exception {
+        return new ModelAndView("index");
+
+    }
 }

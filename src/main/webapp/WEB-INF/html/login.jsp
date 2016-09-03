@@ -45,14 +45,14 @@
         <h1><strong>Welcome</strong> CODE X</h1>
         <h5>sign in to Code X</h5>
 
-        <form id="form-signin" class="form-signin">
+        <form id="form-signin" class="form-signin" ms-controller="login">
           <section>
             <div class="input-group">
-              <input type="text" class="form-control" name="username" placeholder="Username">
+              <input type="text" class="form-control" ms-duplex="username" name="username" placeholder="Username">
               <div class="input-group-addon"><i class="fa fa-user"></i></div>
             </div>
             <div class="input-group">
-              <input type="password" class="form-control" name="password" placeholder="Password">
+              <input type="password" class="form-control" ms-duplex="password" name="password" placeholder="Password">
               <div class="input-group-addon"><i class="fa fa-key"></i></div>
             </div>
           </section>
@@ -63,8 +63,12 @@
             </div>
             <%--<a href="#">Forget password?</a>--%>
           </section>
+          <div class="alert alert-warning alert-dismissable margin-top-15" style="display:none" ms-visible="hasError">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <strong>Warning!</strong><span ms-text="errorMsg"></span>
+          </div>
           <section class="log-in">
-            <a class="btn btn-greensea" href="/comming">Log In</a>
+            <a class="btn btn-greensea" ms-click="submit">Log In</a>
             <span>or</span>
             <a href="/regist" class="btn btn-slategray">Create an account</a>
           </section>
@@ -82,6 +86,6 @@
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/avalon.js"></script>
 
-
+<script src="../../js/codex/login.js"></script>
 </body>
 </html>

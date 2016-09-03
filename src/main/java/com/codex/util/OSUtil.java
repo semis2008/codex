@@ -1,12 +1,14 @@
 package com.codex.util;
 
+import org.apache.commons.lang.StringUtils;
+
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.commons.lang3.StringUtils;
+
 
 public class OSUtil {
 

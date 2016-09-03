@@ -13,7 +13,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller
@@ -29,7 +30,8 @@ public class LoginController {
      * @return
      * @throws Exception
      */
-    @RequestMapping(value = "/loginPost")
+    @RequestMapping(value = "/loginPost",method = RequestMethod.POST)
+    @ResponseBody
     private BaseResponse loginPost(@RequestBody LoginPostReq req) throws Exception {
         BaseResponse response = new BaseResponse();
         if (StringUtil.isEmpty(req.getPassWord()) || StringUtil.isEmpty(req.getUserName())) {

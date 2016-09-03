@@ -1,19 +1,18 @@
 package com.codex.payment.util;
 
-import com.codex.payment.config.AlipayConfig;
-import com.codex.payment.sign.RSA;
-import org.dom4j.Document;
-import org.dom4j.Node;
-import org.dom4j.DocumentException;
-import org.dom4j.io.SAXReader;
-
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import com.codex.payment.config.AlipayConfig;
+import com.codex.payment.sign.RSA;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Node;
+import org.dom4j.io.SAXReader;
 
 /* *
  *类名：AlipaySubmit
@@ -108,7 +107,7 @@ public class AlipaySubmit {
      * @throws MalformedURLException
      */
 	public static String query_timestamp() throws MalformedURLException,
-            DocumentException, IOException {
+                                                        DocumentException, IOException {
 
         //构造访问query_timestamp接口的URL串
         String strUrl = ALIPAY_GATEWAY_NEW + "service=query_timestamp&partner=" + AlipayConfig.partner + "&_input_charset" +AlipayConfig.input_charset;

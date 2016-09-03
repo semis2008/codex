@@ -33,7 +33,7 @@
 
 
 <!-- Wrap all page content here -->
-<div id="wrap">
+<div id="wrap" ms-controller="regist">
   <!-- Make page fluid -->
   <div class="row">
     <!-- Page content -->
@@ -48,19 +48,19 @@
         <form id="form-signin" class="form-signin">
           <section>
             <div class="input-group">
-              <input type="text" class="form-control" name="username" placeholder="Username">
+              <input type="text" class="form-control" name="username" ms-duplex="username" placeholder="Username">
               <div class="input-group-addon"><i class="fa fa-user"></i></div>
             </div>
             <div class="input-group">
-              <input type="password" class="form-control" name="password" placeholder="Password">
+              <input type="password" class="form-control" name="password" ms-duplex="password" placeholder="Password">
               <div class="input-group-addon"><i class="fa fa-key"></i></div>
             </div>
             <div class="input-group">
-              <input type="password" class="form-control" name="passwordConf" placeholder="Confirm Password">
+              <input type="password" class="form-control" name="passwordConf" ms-duplex="passwordConf" placeholder="Confirm Password">
               <div class="input-group-addon"><i class="fa fa-key"></i></div>
             </div>
             <div class="input-group">
-              <input type="text" class="form-control" name="phone" placeholder="Phone">
+              <input type="text" class="form-control" name="phone" ms-duplex="phone" placeholder="Phone">
               <div class="input-group-addon"><i class="fa fa-phone"></i></div>
             </div>
           </section>
@@ -72,7 +72,7 @@
             <%--&lt;%&ndash;<a href="#">Forget password?</a>&ndash;%&gt;--%>
           <%--</section>--%>
           <section class="log-in">
-            <a href="/comming" class="btn btn-greensea">Create an account</a>
+            <a class="btn btn-greensea" ms-click="submit">Create an account</a>
             <span>or</span>
             <a class="btn btn-slategray" href="/login">Log In</a>
           </section>
@@ -89,5 +89,6 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
 <script src="../../js/avalon.js"></script>
+<script src="../../js/codex/regist.js"></script>
 </body>
 </html>
