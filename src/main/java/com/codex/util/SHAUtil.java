@@ -28,7 +28,6 @@ public class SHAUtil {
             e.printStackTrace();
             return "";
         }
-
         byte[] byteArray = inStr.getBytes("UTF-8");
         byte[] md5Bytes = sha.digest(byteArray);
         StringBuffer hexValue = new StringBuffer();
