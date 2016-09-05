@@ -3,7 +3,9 @@ package com.codex.service.impl;
 import com.codex.common.Constants;
 import com.codex.dao.UserMapper;
 import com.codex.model.User;
+import com.codex.model.UserStatus;
 import com.codex.request.LoginPostReq;
+import com.codex.request.RegistSubmitReq;
 import com.codex.response.BaseResponse;
 import com.codex.service.LoginService;
 import com.codex.util.SHAUtil;
@@ -33,6 +35,30 @@ public class LoginServiceImpl implements LoginService{
         String inputPass = UserUtil.getPassEncrypt(req.getPassWord());
         if(user.getPassWord().equals(inputPass)) {
             response.setRetdesc("login success！");
+        }
+        return response;
+    }
+
+    public BaseResponse regist(RegistSubmitReq req) throws Exception {
+        BaseResponse response = new BaseResponse();
+        User user = userMapper.queryUserByName(req.getUserName());
+        if(user!=null) {
+            response.setRetcode(Constants.CODE_FAIL);
+            response.setRetdesc("The username your entered already exist!");
+            return response;
+        }
+        //新增用户
+        user = new User();
+        user.setUserName(req.getUserName());
+        user.setPassWord(UserUtil.getPassEncrypt(req.getPassWord()));
+        user.setUserKey(UserUtil.getUserKey());
+        user.setPhone(req.getPhone());
+        user.setStatus(UserStatus.LIMIT.getStatus());
+        Integer res = userMapper.insertUser(user);
+        if(res!=1) {
+            response.setRetcode(Constants.CODE_FAIL);
+            response.setRetdesc("Regist User Fail:DB Fail!");
+            return response;
         }
         return response;
     }

@@ -14,22 +14,45 @@ $(function () {
                 regist.hasError = true;
                 return;
             }
+            if(regist.username.length<4) {
+                regist.errorMsg="username is too short!";
+                regist.hasError = true;
+                return;
+            }
+            if(regist.password!=regist.passwordConf) {
+                regist.errorMsg="Please enter the same password again!";
+                regist.hasError = true;
+                return;
+            }
+            if(regist.password!=regist.passwordConf) {
+                regist.errorMsg="Please enter the same password again!";
+                regist.hasError = true;
+                return;
+            }
+            var phoneReg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+            if(!phoneReg.test(regist.phone))
+            {
+                regist.errorMsg="Please enter the correct phone!";
+                regist.hasError = true;
+                return;return false;
+            }
             var req = {
                 userName: regist.username,
-                passWord: regist.password
+                passWord: regist.password,
+                phone:regist.phone
             }
             $.ajax({
-                url: "registUser",
+                url: "registSubmit",
                 type: "post",
                 contentType: "application/json",
                 dataType: "json",
                 data: JSON.stringify(req),
                 success: function (data) {
                     if (data.retcode == 0) {
-                        window.location.href = "index";
+                        window.location.href = "login";
                     } else {
-                        login.hasError = true;
-                        login.errorMsg = data.retdesc;
+                        regist.hasError = true;
+                        regist.errorMsg = data.retdesc;
                     }
                 }
             })

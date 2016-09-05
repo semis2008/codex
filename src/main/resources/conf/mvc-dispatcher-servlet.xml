@@ -28,6 +28,7 @@
                     <value>/login</value>
                     <value>/loginPost</value>
                     <value>/regist</value>
+                    <value>/registSubmit</value>
                     <value>/love</value>
                     <value>/index</value>
                 </list>

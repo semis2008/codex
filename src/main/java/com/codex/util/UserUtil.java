@@ -33,7 +33,17 @@ public class UserUtil {
         return SHAUtil.SHA256Encrypt(SHAUtil.shaEncode(pass+"123qwe")).substring(0,16);
     }
 
+    /**
+     * 生成7位随机数
+     * @return
+     * @throws Exception
+     */
+    public static String getUserKey() throws Exception{
+        return UUIDUtil.getUUID().substring(0,7);
+    }
+
+
     public static void main(String args[]) throws Exception{
-        System.out.print(UserUtil.getPassEncrypt("zaq1.2wsx"));
+        System.out.print(UserUtil.getUserKey());
     }
 }

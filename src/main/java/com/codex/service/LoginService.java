@@ -1,6 +1,7 @@
 package com.codex.service;
 
 import com.codex.request.LoginPostReq;
+import com.codex.request.RegistSubmitReq;
 import com.codex.response.BaseResponse;
 import org.springframework.stereotype.Service;
 
@@ -10,4 +11,6 @@ import org.springframework.stereotype.Service;
 public interface LoginService {
 
     BaseResponse loginPost(LoginPostReq req) throws Exception;
+
+    BaseResponse regist(RegistSubmitReq req) throws Exception;
 }

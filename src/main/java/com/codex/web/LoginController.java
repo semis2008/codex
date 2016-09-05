@@ -3,6 +3,7 @@ package com.codex.web;
 
 import com.codex.common.Constants;
 import com.codex.request.LoginPostReq;
+import com.codex.request.RegistSubmitReq;
 import com.codex.response.BaseResponse;
 import com.codex.service.LoginService;
 
@@ -25,7 +26,7 @@ public class LoginController {
     private LoginService loginService;
 
     /**
-     * 登陆页面
+     * 登陆
      *
      * @return
      * @throws Exception
@@ -41,6 +42,33 @@ public class LoginController {
         }
         try {
             response = loginService.loginPost(req);
+            //写cookie
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.setRetcode(Constants.CODE_EXCEPTION);
+            response.setRetdesc("system error!");
+            return response;
+        }
+        return response;
+    }
+
+    /**
+     * 用户注册
+     *
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value = "/registSubmit",method = RequestMethod.POST)
+    @ResponseBody
+    private BaseResponse registSubmit(@RequestBody RegistSubmitReq req) throws Exception {
+        BaseResponse response = new BaseResponse();
+        if (StringUtil.isEmpty(req.getPassWord()) || StringUtil.isEmpty(req.getUserName())||StringUtil.isEmpty(req.getPhone())) {
+            response.setRetcode(Constants.CODE_PARAMETER_ERROR);
+            response.setRetdesc("parameter can`t be null!");
+            return response;
+        }
+        try {
+            response = loginService.regist(req);
         } catch (Exception e) {
             e.printStackTrace();
             response.setRetcode(Constants.CODE_EXCEPTION);

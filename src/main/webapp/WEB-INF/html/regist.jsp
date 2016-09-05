@@ -71,6 +71,10 @@
             <%--</div>--%>
             <%--&lt;%&ndash;<a href="#">Forget password?</a>&ndash;%&gt;--%>
           <%--</section>--%>
+          <div class="alert alert-warning alert-dismissable margin-top-15" style="display:none" ms-visible="hasError">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <strong>Warning!</strong><span ms-text="errorMsg"></span>
+          </div>
           <section class="log-in">
             <a class="btn btn-greensea" ms-click="submit">Create an account</a>
             <span>or</span>

@@ -18,4 +18,6 @@ public interface UserMapper {
 
 	 User queryUserByName(String name);
 
+	Integer insertUser(User user);
+
 }

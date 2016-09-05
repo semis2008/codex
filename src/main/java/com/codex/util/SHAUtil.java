@@ -82,10 +82,11 @@ public class SHAUtil {
      * @throws Exception
      */
     public static void main(String args[]) throws Exception {
-        String str = new String("123qwe");
+        String str = new String("32");
         System.out.println("原始：" + str);
         System.out.println("SHA后：" + shaEncode(str));
         
         System.out.println("SHA后：" + SHA256Encrypt(str));
+        System.out.println("User key：" + UserUtil.getUserKey());
     }
 }
