@@ -2,9 +2,9 @@ package com.codex.util;
 
 import com.codex.common.Constants;
 import com.codex.model.User;
+import org.springframework.web.util.WebUtils;
 
 
-import javax.crypto.ExemptionMechanismException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserUtil {
 
     public static User getLoginUser(HttpServletRequest request) {
-        Object sessionObj = request.getSession().getAttribute(Constants.LOGIN_USER);
+        Object sessionObj = WebUtils.getSessionAttribute(request,Constants.LOGIN_USER);
         if(sessionObj==null) {
             return null;
         }else {
@@ -25,7 +25,6 @@ public class UserUtil {
                 return null;
             }
         }
-
     }
 
 

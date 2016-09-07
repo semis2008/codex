@@ -12,4 +12,6 @@ public class Constants {
 
     public static final String LOGIN_USER = "login_user";
     public static final String CODEX_PREFIX = "http://localhost:8080";
+
+    public static final String SESSION_KEY = "codex_session_key";
 }

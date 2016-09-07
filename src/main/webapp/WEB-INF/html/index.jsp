@@ -7,6 +7,8 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
+<%@ page import="com.codex.model.User" %>
+<%@ page import="com.codex.common.Constants" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -30,18 +32,20 @@
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<%
+    User loginUser = (User) request.getAttribute(Constants.LOGIN_USER);
+    if (loginUser == null) {
+        loginUser = new User();
+    }
+%>
 
 <body class="bg-1" ms-controller="index">
-
-
 <!-- Wrap all page content here -->
 <div id="wrap">
     <!-- Make page fluid -->
     <div class="row">
         <div class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top" role="navigation"
              id="navbar">
-
-
             <!-- Branding -->
             <div class="navbar-header col-md-2">
                 <a class="navbar-brand" href="#">
@@ -49,8 +53,6 @@
                 </a>
             </div>
             <!-- Branding end -->
-
-
             <!-- .nav-collapse -->
             <div class="navbar-collapse">
                 <!-- Quick Actions -->
@@ -62,7 +64,7 @@
                             <img src="../../img/codex/example-1.jpg" alt="">
                         </div>
                         <a class="dropdown-toggle options" data-toggle="dropdown" href="#">
-                            John Douey <i class="fa fa-caret-down"></i>
+                            <%=loginUser.getUserName() %> <i class="fa fa-caret-down"></i>
                         </a>
 
                         <ul class="dropdown-menu arrow settings animated fadeInDown">
@@ -81,7 +83,7 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                                <a ms-click="logout"><i class="fa fa-power-off"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -90,14 +92,13 @@
                 <!-- /Quick Actions -->
             </div>
         </div>
-
-
         <!-- Page content -->
-        <div id="content" class="col-md-12">
+        <div id="content" class="col-md-12 row" style="overflow: hidden; outline: none;">
             <!-- page header -->
             <div class="pageheader">
                 <h2><i class="fa fa-user" style="line-height: 46px;padding-left: 0;"></i> Profile <span>welcome to CODE X</span>
                 </h2>
+
                 <div class="breadcrumbs">
                     <ol class="breadcrumb">
                         <li>You are here</li>
@@ -110,7 +111,7 @@
             </div>
             <!-- /page header -->
             <!-- content main container -->
-            <div class="main">
+            <div class="row">
                 <!-- row -->
                 <div class="row">
                     <!-- col 4 -->
@@ -139,12 +140,13 @@
                           </span>
 
                                     <div class="media-body">
-                                        <h4 class="media-heading"><strong>John</strong> Douey</h4>
-                                        <small><a href="#">john.douey@minimal.com</a></small>
+                                        <h4 class="media-heading"><strong><%=loginUser.getUserName() %>
+                                        </strong>#<%=loginUser.getUserKey()%>
+                                        </h4>
+                                        <small><a href="#"><%=loginUser.getPhone()%>
+                                        </a></small>
                                     </div>
                                 </div>
-
-
                             </div>
                             <!-- /tile widget -->
 
@@ -166,8 +168,6 @@
                                 </ul>
                             </div>
                             <!-- /tile body -->
-
-
                         </section>
                         <div class="alert alert-warning alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -183,11 +183,10 @@
                       <span class="pull-left">
                         <i class="fa fa-users media-object"></i>
                       </span>
-
                                             <div class="media-body">
                                                 <small>Users</small>
-                                                <h2 class="media-heading animate-number" data-value="3659"
-                                                    data-animation-duration="1500">3,659</h2>
+                                                <h2 class="media-heading animate-number" data-value="1"
+                                                    data-animation-duration="1500">1</h2>
                                             </div>
                                         </div>
 
@@ -200,7 +199,7 @@
 
                                     </div>
                                     <div class="back">
-                                        <a href="#">
+                                        <a data-toggle="modal" data-target="#payModal">
                                             <i class="fa fa-dollar fa-4x"></i>
                                             <span>Active You Account</span>
                                         </a>
@@ -209,21 +208,31 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <!-- /col 8 -->
-
-
             </div>
             <!-- /row -->
-
-
         </div>
         <!-- /content container -->
-
     </div>
 </div>
+
+<!-- payModal -->
+<div class="modal fade" id="payModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body" style="padding: 0px; !important;">
+                <div class="col-md-12">
+                    <div class="tile transparent">
+                        <div class="text-info well">please enter your username when you pay the bill</div>
+                        <img src="../../img/codex/payment/alipay.jpg" class="col-md-6 col-md-offset-3"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Javascript -->
 <script src="../../js/jquery.min.js"></script>
@@ -232,19 +241,13 @@
 <script src="../../js/codex/index.js"></script>
 <script>
     $(function () {
-
         // Initialize card flip
         $('.card.hover').hover(function () {
             $(this).addClass('flip');
         }, function () {
             $(this).removeClass('flip');
         });
-
-
     })
-
 </script>
 </body>
-
-
 </html>

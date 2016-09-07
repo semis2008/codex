@@ -13,6 +13,10 @@ import com.codex.util.StringUtil;
 import com.codex.util.UserUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.util.WebUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by ningwang4 on 16/9/1.
@@ -23,18 +27,20 @@ public class LoginServiceImpl implements LoginService{
     @Autowired
     private UserMapper userMapper;
 
-    public BaseResponse loginPost(LoginPostReq req) throws Exception{
+    public BaseResponse loginPost(LoginPostReq req, HttpServletRequest request) throws Exception{
         BaseResponse response = new BaseResponse();
         User user = userMapper.queryUserByName(req.getUserName());
         if(user==null) {
             response.setRetcode(Constants.CODE_FAIL);
-            response.setRetdesc("The user name your entered does not exist!");
+            response.setRetdesc("username or password is wrong!");
             return response;
         }
         //校验密码
         String inputPass = UserUtil.getPassEncrypt(req.getPassWord());
         if(user.getPassWord().equals(inputPass)) {
             response.setRetdesc("login success！");
+            //写入session
+            WebUtils.setSessionAttribute(request,Constants.LOGIN_USER,user);
         }
         return response;
     }
