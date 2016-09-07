@@ -15,7 +15,7 @@
     <insert id="insertUser" parameterType="User">
         insert into
         user(userName,passWord,userKey,phone,status,createTime)
-        value(#{userName}#{passWord},#{userKey},#{phone},#{status},#{createTime})
+        value(#{userName},#{passWord},#{userKey},#{phone},#{status},#{createTime})
         <selectKey resultType="Integer" keyProperty="id">
             SELECT
             LAST_INSERT_ID()
