@@ -16,10 +16,6 @@
         insert into
         user(userName,passWord,userKey,phone,status,createTime)
         value(#{userName},#{passWord},#{userKey},#{phone},#{status},now())
-        <selectKey resultType="Long" keyProperty="id">
-            SELECT
-            LAST_INSERT_ID()
-        </selectKey>
     </insert>
 
     <select id="queryUserByName" resultMap="User">

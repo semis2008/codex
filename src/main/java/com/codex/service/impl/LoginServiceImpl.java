@@ -61,11 +61,11 @@ public class LoginServiceImpl implements LoginService{
         user.setPhone(req.getPhone());
         user.setStatus(UserStatus.LIMIT.getStatus());
         Integer res = userMapper.insertUser(user);
-        if(res!=1) {
-            response.setRetcode(Constants.CODE_FAIL);
-            response.setRetdesc("Regist User Fail:DB Fail!");
-            return response;
-        }
+//        if(res!=1) {
+//            response.setRetcode(Constants.CODE_FAIL);
+//            response.setRetdesc("Regist User Fail:DB Fail!");
+//            return response;
+//        }
         return response;
     }
 }
